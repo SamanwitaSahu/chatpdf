@@ -1,4 +1,4 @@
-# Woeking Demo- https://drive.google.com/file/d/1ocmHL202IjGNB-doKFggjvmB77It50ry/view?usp=sharing
+# Working Demo- https://drive.google.com/file/d/1ocmHL202IjGNB-doKFggjvmB77It50ry/view?usp=sharing
 # 📚 Chat with PDF using Gemini 💬  
 🚀 **Still working on making it support 100+ page PDFs and asynchronous processing!**  
 🛠️ **Better OCR methods are also being tested for improved accuracy.**
