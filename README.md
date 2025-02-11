@@ -3,11 +3,12 @@
 #Upadete -
 
 
+
 📄 Chat with PDF using Groq AI
 🚀 Fast & Free  Groq AI (replacing Gemini for more runtime).
 ✅ Handles 100+ Page PDFs Efficiently
 ✅ Optimized OCR Processing with PaddleOCR
-✅ Work in Progress: Implementing Threading for Even Faster Performance
+✅ Work in Progress: Implementing Threading for Even Faster Performance RAG.py is processing very fast still optimizing
 
 🛠 Features
 ✔️ Chat with any PDF document (Text-based or Scanned PDFs)
@@ -25,9 +26,7 @@
 4️⃣ Retrieves relevant content using FAISS search
 5️⃣ Generates responses using Groq AI (Fast & Free)
 
-🔥 Work in Progress
-⚡ Implementing Multi-threading for Even Faster Processing!
-✅ Current Speed: 3x Faster than Before
+
 🔜 Goal: Make Large PDFs Load Instantly
 
 
