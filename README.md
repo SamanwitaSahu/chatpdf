@@ -1,6 +1,6 @@
-# Working Demo- https://drive.google.com/file/d/1y3VpjA1dyi-9yyiVmzE6JJ23heIa1Gk9/view?usp=sharing
+# Working Demo- 
 
-#Upadete -
+#Upadete -  COMPLETED - 152 pages in 46 seconds and 100 pages in 33  seconds
 
 
 # Chat with PDF using Groq AI
