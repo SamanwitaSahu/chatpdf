@@ -1,4 +1,43 @@
-# Working Demo- https://drive.google.com/file/d/1ocmHL202IjGNB-doKFggjvmB77It50ry/view?usp=sharing
+# Working Demo- 
+
+#Upadete -
+
+
+📄 Chat with PDF using Groq AI
+🚀 Fast & Free  Groq AI (replacing Gemini for more runtime).
+✅ Handles 100+ Page PDFs Efficiently
+✅ Optimized OCR Processing with PaddleOCR
+✅ Work in Progress: Implementing Threading for Even Faster Performance
+
+🛠 Features
+✔️ Chat with any PDF document (Text-based or Scanned PDFs)
+✔️ Now supports 100+ page PDFs! Optimized for large documents
+✔️ Using Groq AI (llama3-70b, mistral-7b) instead of Gemini (more runtime, faster API)
+✔️ OCR using PaddleOCR (Faster than Tesseract) for scanned PDFs
+✔️ FAISS-powered retrieval (Optimized for fast document search)
+✔️ Table Extraction from PDFs using pdfplumber
+
+
+⚡ How It Works
+1️⃣ Extracts text, images & tables from PDFs
+2️⃣ OCR (PaddleOCR) processes scanned PDFs
+3️⃣ Splits text into chunks & indexes with FAISS
+4️⃣ Retrieves relevant content using FAISS search
+5️⃣ Generates responses using Groq AI (Fast & Free)
+
+🔥 Work in Progress
+⚡ Implementing Multi-threading for Even Faster Processing!
+✅ Current Speed: 3x Faster than Before
+🔜 Goal: Make Large PDFs Load Instantly
+
+
+
+
+
+
+
+
+
 # 📚 Chat with PDF using Gemini 💬  
 🚀 **Still working on making it support 100+ page PDFs and asynchronous processing!**  
 🛠️ **Better OCR methods are also being tested for improved accuracy.**
