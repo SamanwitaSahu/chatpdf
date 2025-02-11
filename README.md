@@ -4,30 +4,30 @@
 
 
 
-📄 Chat with PDF using Groq AI
-🚀 Fast & Free  Groq AI (replacing Gemini for more runtime).
-✅ Handles 100+ Page PDFs Efficiently
-✅ Optimized OCR Processing with PaddleOCR
-✅ Work in Progress: Implementing Threading for Even Faster Performance RAG.py is processing very fast still optimizing
+-📄 Chat with PDF using Groq AI
+-🚀 Fast & Free  Groq AI (replacing Gemini for more runtime).
+-✅ Handles 100+ Page PDFs Efficiently
+-✅ Optimized OCR Processing with PaddleOCR
+-✅ Work in Progress: Implementing Threading for Even Faster Performance RAG.py is processing very fast still optimizing
 
-🛠 Features
-✔️ Chat with any PDF document (Text-based or Scanned PDFs)
-✔️ Now supports 100+ page PDFs! Optimized for large documents
-✔️ Using Groq AI (llama3-70b, mistral-7b) instead of Gemini (more runtime, faster API)
-✔️ OCR using PaddleOCR (Faster than Tesseract) for scanned PDFs
-✔️ FAISS-powered retrieval (Optimized for fast document search)
-✔️ Table Extraction from PDFs using pdfplumber
-
-
-⚡ How It Works
-1️⃣ Extracts text, images & tables from PDFs
-2️⃣ OCR (PaddleOCR) processes scanned PDFs
-3️⃣ Splits text into chunks & indexes with FAISS
-4️⃣ Retrieves relevant content using FAISS search
-5️⃣ Generates responses using Groq AI (Fast & Free)
+-🛠 Features
+-✔️ Chat with any PDF document (Text-based or Scanned PDFs)
+-✔️ Now supports 100+ page PDFs! Optimized for large documents
+-✔️ Using Groq AI (llama3-70b, mistral-7b) instead of Gemini (more runtime, faster API)
+-✔️ OCR using PaddleOCR (Faster than Tesseract) for scanned PDFs
+-✔️ FAISS-powered retrieval (Optimized for fast document search)
+-✔️ Table Extraction from PDFs using pdfplumber
 
 
-🔜 Goal: Make Large PDFs Load Instantly
+-⚡ How It Works
+-1️⃣ Extracts text, images & tables from PDFs
+-2️⃣ OCR (PaddleOCR) processes scanned PDFs
+-3️⃣ Splits text into chunks & indexes with FAISS
+-4️⃣ Retrieves relevant content using FAISS search
+-5️⃣ Generates responses using Groq AI (Fast & Free)
+
+
+-🔜 Goal: Make Large PDFs Load Instantly
 
 
 
