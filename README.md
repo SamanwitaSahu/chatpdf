@@ -3,31 +3,30 @@
 #Upadete -
 
 
+# Chat with PDF using Groq AI
 
--📄 Chat with PDF using Groq AI
--🚀 Fast & Free  Groq AI (replacing Gemini for more runtime).
--✅ Handles 100+ Page PDFs Efficiently
--✅ Optimized OCR Processing with PaddleOCR
--✅ Work in Progress: Implementing Threading for Even Faster Performance RAG.py is processing very fast still optimizing
+🚀 **Fast & Free** PDF Chat using Groq AI (replacing Gemini for increased runtime).  Handles 100+ page PDFs efficiently!
 
--🛠 Features
--✔️ Chat with any PDF document (Text-based or Scanned PDFs)
--✔️ Now supports 100+ page PDFs! Optimized for large documents
--✔️ Using Groq AI (llama3-70b, mistral-7b) instead of Gemini (more runtime, faster API)
--✔️ OCR using PaddleOCR (Faster than Tesseract) for scanned PDFs
--✔️ FAISS-powered retrieval (Optimized for fast document search)
--✔️ Table Extraction from PDFs using pdfplumber
+✅ Optimized OCR Processing with PaddleOCR.
 
+🛠 **Features**
 
--⚡ How It Works
--1️⃣ Extracts text, images & tables from PDFs
--2️⃣ OCR (PaddleOCR) processes scanned PDFs
--3️⃣ Splits text into chunks & indexes with FAISS
--4️⃣ Retrieves relevant content using FAISS search
--5️⃣ Generates responses using Groq AI (Fast & Free)
+*   ✔️ Chat with any PDF document (Text-based or Scanned PDFs)
+*   ✔️ **Now supports 100+ page PDFs!** Optimized for large documents.
+*   ✔️ Using Groq AI (llama3-70b, mistral-7b) instead of Gemini (more runtime, faster API).
+*   ✔️ OCR using PaddleOCR (Faster than Tesseract) for scanned PDFs.
+*   ✔️ FAISS-powered retrieval (Optimized for fast document search).
+*   ✔️ Table Extraction from PDFs using pdfplumber.
 
+⚡ **How It Works**
 
--🔜 Goal: Make Large PDFs Load Instantly
+1.  Extracts text, images & tables from PDFs.
+2.  OCR (PaddleOCR) processes scanned PDFs.
+3.  Splits text into chunks & indexes with FAISS.
+4.  Retrieves relevant content using FAISS search.
+5.  Generates responses using Groq AI (Fast & Free).
+
+🔜 **Goal:** Make Large PDFs Load Instantly.
 
 
 
