@@ -1,0 +1,10 @@
+streamlit
+PyMuPDF
+pdfplumber
+paddleocr
+langchain
+faiss-cpu
+huggingface-hub
+transformers
+python-dotenv
+groq
