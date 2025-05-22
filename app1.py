@@ -4,8 +4,9 @@ import fitz  # PyMuPDF
 import pdfplumber
 from paddleocr import PaddleOCR
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+
 from dotenv import load_dotenv
 from groq import Groq
 import concurrent.futures  # For parallel processing
@@ -20,7 +21,8 @@ load_dotenv()
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Initialize PaddleOCR (Faster than Tesseract)
-ocr = PaddleOCR(use_angle_cls=True, lang="en")
+ocr = PaddleOCR(use_textline_orientation=True, lang="en")
+
 
 # Get Number of CPU Cores
 NUM_CORES = os.cpu_count()  # Use all available cores (defaults to 4 if not detected)
