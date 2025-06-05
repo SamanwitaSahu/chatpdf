@@ -13,6 +13,7 @@ import concurrent.futures  # For parallel processing
 import faiss
 import time
 import gc
+import tempfile
 
 # Load environment variables
 load_dotenv()
@@ -123,7 +124,8 @@ def get_vector_store(text_chunks):
     for sub_vector_store in sub_vector_stores:
         vector_store.merge_from(sub_vector_store)
 
-    vector_store.save_local("faiss_index")
+    vector_store.save_local("/tmp/faiss_index")
+
 
 # **🚀 Optimized Query Handling**
 def retrieve_context(user_question):
