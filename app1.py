@@ -42,7 +42,7 @@ def get_text_chunks(text):
 def split_pdf_pages(pdf, num_splits=10):
     """Splits a PDF into 'num_splits' smaller batches for parallel processing."""
     try:
-        doc = fitz.open(stream=pdf.read(), filetype="pdf")
+        doc = fitz.open(stream=uploaded_file.read(), filetype="pdf")
         total_pages = len(doc)
         pages_per_split = max(1, total_pages // num_splits)  # Ensure at least 1 page per split
 
