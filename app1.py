@@ -2,7 +2,9 @@ import streamlit as st
 import os
 import fitz  # PyMuPDF
 import pdfplumber
-from paddleocr import PaddleOCR
+# from paddleocr import PaddleOCR
+import easyocr
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -22,7 +24,9 @@ load_dotenv()
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Initialize PaddleOCR (Faster than Tesseract)
-ocr = PaddleOCR(use_textline_orientation=True, lang="en")
+# ocr = PaddleOCR(use_textline_orientation=True, lang="en")
+ocr = easyocr.Reader(['en'])
+
 
 
 # Get Number of CPU Cores
@@ -59,14 +63,19 @@ def extract_text_from_pdf_pages(pages):
 
 # **Optimized OCR (Skip OCR if Text is Present)**
 def extract_text_from_images(pages):
-    """Extracts text from scanned pages using OCR but skips pages that already contain text."""
+    """Extracts text from scanned pages using EasyOCR but skips pages that already contain text."""
     text = ""
     for page in pages:
-        if not page.get_text("text"):  # Only OCR if no selectable text
+        if not page.get_text("text"):
             image = page.get_pixmap()
-            extracted_text = ocr.ocr(image, cls=True)
-            text += " ".join([line[1][0] for result in extracted_text for line in result]) + "\n"
+            img_data = image.tobytes("png")
+            with tempfile.NamedTemporaryFile(suffix=".png") as tmp:
+                tmp.write(img_data)
+                tmp.flush()
+                result = ocr.readtext(tmp.name, detail=0)
+                text += " ".join(result) + "\n"
     return text
+
 
 # Extract Tables from PDF
 def extract_tables_from_pdf(pdf):
