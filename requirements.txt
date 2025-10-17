@@ -9,3 +9,4 @@ transformers
 python-dotenv
 groq
 paddlepaddle
+easyocr==1.7.1
